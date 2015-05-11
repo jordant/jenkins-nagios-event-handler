@@ -1,4 +1,4 @@
-import ast
+iemport json
 import optparse
 import sys
 
@@ -46,7 +46,8 @@ def parse_options():
 
 def build_param_dict():
     options = parse_options()
-    return ast.literal_eval(options.build_params)
+    dict = json.loads(options.build_params)
+    return dict
 
 
 def get_jenkins():
