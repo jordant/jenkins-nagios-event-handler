@@ -1,4 +1,4 @@
-iemport json
+import json
 import optparse
 import sys
 
